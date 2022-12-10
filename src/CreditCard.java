@@ -1,5 +1,3 @@
-package CreditCard;
-
 public class CreditCard {
     String numberScore;
     int sum;
