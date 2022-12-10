@@ -17,9 +17,9 @@ public class CreditCard {
     }
 
     public static void main(String[] args) {
-        CreditCard Card1 = new CreditCard("A001", 100);
-        CreditCard Card2 = new CreditCard("B002", 20);
-        CreditCard Card3 = new CreditCard("C003", 70);
+        CreditCard Card1 = new CreditCard("A001", 200);
+        CreditCard Card2 = new CreditCard("B002", 30);
+        CreditCard Card3 = new CreditCard("C003", 40);
 
         Card1.getAdd();
         Card2.getAdd();
@@ -38,3 +38,4 @@ public class CreditCard {
                 '}';
     }
 }
+
