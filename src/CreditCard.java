@@ -4,17 +4,11 @@ public class CreditCard {
     String numberScore;
     int sum;
 
-    public void addSum() {
-        System.out.println("Введите сумму для добавления на счет " + numberScore);
-        Scanner sc = new Scanner(System.in);
-        int sum1 = sc.nextInt();
+    public void addSum(int sum1) {
         sum = sum + sum1;
     }
 
-    public void takeOffSum() {
-        System.out.println("Введите сумму, которую необходимо снять со счета " + numberScore);
-        Scanner sc = new Scanner(System.in);
-        int sum1 = sc.nextInt();
+    public void takeOffSum(int sum1) {
         if (sum1 < sum) {
             sum = sum - sum1;
         } else {
@@ -36,9 +30,9 @@ public class CreditCard {
         System.out.println(Card2);
         System.out.println(Card3);
 
-        Card1.addSum();
-        Card2.addSum();
-        Card3.takeOffSum();
+        Card1.addSum(40);
+        Card2.addSum(70);
+        Card3.takeOffSum(50);
 
         System.out.println(Card1);
         System.out.println(Card2);
